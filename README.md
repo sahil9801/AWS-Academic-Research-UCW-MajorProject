@@ -33,7 +33,7 @@ Transform an on-premises academic research platform into a cloud-native applicat
 ## Core Architectural Components
 
 ### 1. Global Research Infrastructure (Module 3 Enhanced)
-![Multi-Region Research Architecture](https://d1.awsstatic.com/solutions/Solutions%20Category%20Template%20Draft/Research-IT_architecture.4c88eafbdde7d2d0e4b25f757a3651b1a0d3310d.png)
+![Multi-Region Research Architecture](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%201.drawio.png)
 *Active-Active deployment across US-East-1 and EU-West-1*
 
 **Key Features:**
