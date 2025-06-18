@@ -5,6 +5,20 @@
 ### Project Description
 Migrated a legacy academic research portal to AWS, implementing a scalable, secure, and cost-optimized cloud infrastructure. The solution handles 50,000+ monthly users with 99.9% availability while reducing operational costs by 35%. Leveraged AWS Well-Architected Framework principles across all architecture decisions.
 
+## Architecture Overview
+```mermaid
+graph TD
+    A[University Systems] -->|SFTP| B(S3 Raw Bucket)
+    B --> C[AWS Glue DataBrew]
+    C --> D[S3 Cleaned Bucket]
+    D --> E[Athena/QuickSight]
+    D --> F[EC2 Analytics Cluster]
+    G[Lambda] -->|Trigger| C
+    H[VPC] -->|Secure| F
+    I[IAM] -->|Access Control| ALL
+    J[CloudWatch] -->|Monitor| ALL
+    K[CloudTrail] -->|Audit| ALL
+```
 ### Objective
 Transform an on-premises academic research platform into a cloud-native application with:
 1. Zero-downtime migration
@@ -25,8 +39,6 @@ Transform an on-premises academic research platform into a cloud-native applicat
    - Right-sizing with Compute Optimizer
    - Automated cost governance
    - Performance benchmarking
-
----
 
 ## Core Architectural Components
 
@@ -60,6 +72,16 @@ ResearchDataReplication:
 ![Research Security Architecture](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%204.drawio.png)
 *Layered security model for sensitive research data*
 
+### IAM Security Implementation
+```mermaid
+pie
+    title Access Policy Distribution
+    "Read-only" : 65
+    "Read-Write" : 25
+    "Admin" : 10
+```
+*Findings: 100% least-privilege compliance through IAM Access Analyzer*
+
 **Implementation:**
 - **IAM Roles Anywhere** for on-premises hybrid access
 - **AWS Organizations SCPs** enforcing encryption policies
@@ -67,21 +89,25 @@ ResearchDataReplication:
 - **WAF Managed Rules** blocking SQL injection attacks
 - **Security Hub** automated compliance reports
 
-**Data Flow Controls:**
-```mermaid
-graph TD
-A[Researcher] --> B[Global Accelerator]
-B --> C[WAF Protected ALB]
-C --> D[HTTPS Termination]
-D --> E[App Tier Security Groups]
-E --> F[Encrypted RDS]
-```
-
 ### 3. Research Data Processing Pipeline (Modules 6+7 Enhanced)
 ![Serverless Research Pipeline(Module6)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%206.drawio.png)
 ![Serverless Research Pipeline(Module7)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%207.drawio.png)
 *Real-time data ingestion and analysis workflow*
 
+### Lambda Automation Workflow
+```mermaid
+sequenceDiagram
+    participant S3 as S3 Raw Bucket
+    participant Lambda as Trigger Lambda
+    participant Glue as Glue DataBrew
+    participant CW as CloudWatch
+    
+    S3->>Lambda: ObjectCreated event
+    Lambda->>Glue: Start cleaning job
+    Glue->>CW: Send metrics
+    CW->>Lambda: Anomaly detection
+    Lambda->>SNS: Send alert if anomalies
+```
 **Components:**
 1. **API Gateway**: REST API for data submissions
 2. **Lambda Functions**: Python-based data validation/transformation
@@ -124,8 +150,24 @@ def transform_research_data(event):
 
 ### 4. Network Architecture for Research Collaboration (Module 5 Enhanced)
 ![Research VPC Design](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%205.drawio.png)
-*Isolated research environments with controlled access*
 
+### VPC Security Architecture
+```mermaid
+graph LR
+    subgraph VPC[Academic VPC - 172.31.0.0/16]
+        subgraph Public[Public Subnet]
+            EC2[Analytics EC2]
+        end
+        subgraph Private[Private Subnet]
+            S3EP[S3 Endpoint]
+            GlueEP[Glue Endpoint]
+        end
+        IG[Internet Gateway]
+        EC2 --> IG
+        EC2 --> S3EP
+        GlueEP --> S3EP
+    end
+```
 **Network Topology:**
 - **VPC Peering** between research and analytics environments
 - **Transit Gateway** connecting 3 VPCs (web, data, admin)
@@ -206,7 +248,16 @@ Resources:
         }
 ```
 
----
+### Future Architecture
+```mermaid
+graph LR
+    A[S3 Data Lake] --> B[Glue ETL]
+    B --> C[Redshift Warehouse]
+    C --> D[QuickSight BI]
+    C --> E[SageMaker ML]
+    E --> F[Early Warning System]
+    F --> G[Student Intervention]
+```
 
 ## Deliverables
 1. **Production Infrastructure**:
