@@ -79,7 +79,7 @@ E --> F[Encrypted RDS]
 
 ### 3. Research Data Processing Pipeline (Modules 6+7 Enhanced)
 ![Serverless Research Pipeline(Module6)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%206.drawio.png)
-[Serverless Research Pipeline(Module7)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%207.drawio.png)
+![Serverless Research Pipeline(Module7)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%207.drawio.png)
 *Real-time data ingestion and analysis workflow*
 
 **Components:**
@@ -123,7 +123,7 @@ def transform_research_data(event):
 ```
 
 ### 4. Network Architecture for Research Collaboration (Module 5 Enhanced)
-![Research VPC Design](https://d1.awsstatic.com/Developer%20Marketing/containers/architecture-images/DeepRacer/DeepRacer_architecture_diagram.4c88eafbdde7d2d0e4b25f757a3651b1a0d3310d.png)
+![Research VPC Design](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%205.drawio.png)
 *Isolated research environments with controlled access*
 
 **Network Topology:**
@@ -141,7 +141,7 @@ def transform_research_data(event):
 ---
 
 ## Cost Optimization Framework (Module 2 Enhanced)
-![Research Cost Dashboard](https://d1.awsstatic.com/cost-management/Product-Page-Diagram_AWS-Cost-Explorer.4c88eafbdde7d2d0e4b25f757a3651b1a0d3310d.png)
+![Research Cost Dashboard](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%202.drawio.png)
 *Automated cost governance implementation*
 
 **Cost Reduction Strategies:**
