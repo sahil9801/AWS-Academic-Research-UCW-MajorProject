@@ -1,7 +1,5 @@
 # AWS-Data-Analyst---Academic-Research-UCW
 
-Here's an enhanced, industry-standard AWS project with realistic architectural designs and advanced concepts:
-
 ### Project Title: **Cloud Migration & Optimization for Academic Research Portal**
 
 ### Project Description
@@ -33,7 +31,7 @@ Transform an on-premises academic research platform into a cloud-native applicat
 ## Core Architectural Components
 
 ### 1. Global Research Infrastructure (Module 3 Enhanced)
-![Multi-Region Research Architecture](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%201.drawio.png)
+![Multi-Region Research Architecture](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%203.drawio.png)
 *Active-Active deployment across US-East-1 and EU-West-1*
 
 **Key Features:**
@@ -59,7 +57,7 @@ ResearchDataReplication:
 ```
 
 ### 2. Zero-Trust Security Framework (Module 4 Enhanced)
-![Research Security Architecture](https://d1.awsstatic.com/security-center/architecture_diagrams/zero-trust-aws-architecture.4c88eafbdde7d2d0e4b25f757a3651b1a0d3310d.png)
+![Research Security Architecture](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%204.drawio.png)
 *Layered security model for sensitive research data*
 
 **Implementation:**
@@ -80,7 +78,8 @@ E --> F[Encrypted RDS]
 ```
 
 ### 3. Research Data Processing Pipeline (Modules 6+7 Enhanced)
-![Serverless Research Pipeline](https://d1.awsstatic.com/architecture-diagrams/Serverless-Data-Processing.4c88eafbdde7d2d0e4b25f757a3651b1a0d3310d.png)
+![Serverless Research Pipeline(Module6)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%206.drawio.png)
+[Serverless Research Pipeline(Module7)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%207.drawio.png)
 *Real-time data ingestion and analysis workflow*
 
 **Components:**
