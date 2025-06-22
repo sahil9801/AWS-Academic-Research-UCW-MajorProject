@@ -227,7 +227,7 @@ Stateful inspection
 Anomaly detection
 
 ## Module 6: Compute Services: From EC2 to Serverless and 
-### 3. Research Data Processing Pipeline (Modules 6)
+### Research Data Processing Pipeline (Modules 6)
 [![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
 ](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%206.drawio.png
 )
