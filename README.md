@@ -6,19 +6,9 @@
 The following outlines my rigorous progression through AWS’s core foundational modules, each comprising conceptual frameworks, hands-on labs, and competency validation. This structured learning directly enabled the design, implementation, and optimization of a serverless data analytics pipeline, ensuring alignment with industry best practices for scalability, security, and cost-efficiency.
 
 ## Architecture Overview
-```mermaid
-graph TD
-    A[University Systems] -->|SFTP| B(S3 Raw Bucket)
-    B --> C[AWS Glue DataBrew]
-    C --> D[S3 Cleaned Bucket]
-    D --> E[Athena/QuickSight]
-    D --> F[EC2 Analytics Cluster]
-    G[Lambda] -->|Trigger| C
-    H[VPC] -->|Secure| F
-    I[IAM] -->|Access Control| ALL
-    J[CloudWatch] -->|Monitor| ALL
-    K[CloudTrail] -->|Audit| ALL
-```
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Architecture.png
+)
 
 ## Core Architectural Components
 
