@@ -45,8 +45,9 @@ Project Impact: 40% faster dataset onboarding
 
 ### Module 2: Cloud Economics & Operational Governance
 ## Cost Optimization Framework
-[![AWS Module 2 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
-](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%202.drawio.png)
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%202.drawio.png
+)
 
 *Automated cost governance implementation*
 
