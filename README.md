@@ -6,8 +6,8 @@
 The following outlines my rigorous progression through AWS’s core foundational modules, each comprising conceptual frameworks, hands-on labs, and competency validation. This structured learning directly enabled the design, implementation, and optimization of a serverless data analytics pipeline, ensuring alignment with industry best practices for scalability, security, and cost-efficiency.
 
 ## Architecture Overview
-(![AWS Architecture](https://github.com/user-attachments/assets/AWS%20Architecture.png
-)
+[AWS Architecture](https://github.com/user-attachments/assets/AWS%20Architecture.png
+
 
 ## Core Architectural Components
 
