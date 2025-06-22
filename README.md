@@ -45,8 +45,9 @@ Project Impact: 40% faster dataset onboarding
 
 ### Module 2: Cloud Economics & Operational Governance
 ## Cost Optimization Framework
-![Research Cost Dashboard](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%202.drawio.png)
-*Automated cost governance implementation*
+[![Research Cost Dashboard](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%202.drawio.png)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%202.drawio.png
+)*Automated cost governance implementation*
 
 **Cost Reduction Strategies:**
 1. **Compute Savings**: 
