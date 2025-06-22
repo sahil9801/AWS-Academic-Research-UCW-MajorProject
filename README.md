@@ -208,23 +208,23 @@ VPC Peering between research and analytics environments.
 Transit Gateway connecting 3 VPCs (web, data, admin).
 PrivateLink for secure service access.
 Site-to-Site VPN to university data centers.
-Security Layers:
-
-Network ACLs: Subnet-level traffic control.
-Security Groups: Instance-level microsegmentation.
-AWS Network Firewall: Stateful inspection.
-Flow Logs: Anomaly detection.
-
 
 ### VPC Security Architecture
 [![GitHub VPC Diagram](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20VPC.png)](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20VPC.png)
 
 ## Security Layers:
 
-Network ACLs: Subnet-level traffic control
-Security Groups: Instance-level microsegmentation
-AWS Network Firewall: Stateful inspection
-Flow Logs: Anomaly detection
+#### Network ACLs: 
+Subnet-level traffic control
+
+#### Security Groups: 
+Instance-level microsegmentation
+
+#### AWS Network Firewall: 
+Stateful inspection
+
+#### Flow Logs: 
+Anomaly detection
 
 ## Module 6: Compute Services: From EC2 to Serverless and 
 ### 3. Research Data Processing Pipeline (Modules 6)
@@ -252,11 +252,20 @@ Lambda Automation Workflow:
 
 ## Components:
 
-API Gateway: REST API for data submissions.
-Lambda Functions: Python-based data validation/transformation.
-Kinesis Data Streams: Real-time processing pipeline.
-DynamoDB: Metadata storage with ACID transactions.
-S3 Intelligent Tiering: Cost-optimized research data storage.
+#### API Gateway: 
+REST API for data submissions.
+
+#### Lambda Functions: 
+Python-based data validation/transformation.
+
+#### Kinesis Data Streams: 
+Real-time processing pipeline.
+
+#### DynamoDB: 
+Metadata storage with ACID transactions.
+
+#### S3 Intelligent Tiering: 
+Cost-optimized research data storage.
 
 ```
 # Lambda Snippet (Metadata Processing)
@@ -293,7 +302,7 @@ Beyond infrastructure, this project emphasizes robust data quality and streamlin
 ## Data Infrastructure Deployment
 (Parallels "Data Collection and Preparation" in analytical studies)
 
-Tools: AWS EC2, S3, VPC
+#### Tools: AWS EC2, S3, VPC
 
 ## Key Actions:
 
@@ -311,10 +320,14 @@ Tools: AWS Glue DataBrew, IAM Access Analyzer
 
 ## ETL Workflow:
 
-Source: S3 bucket (Graduation Status dataset).
-Transformations: Schema validation and conditional routing (Passed/Failed).
-Output: Partitioned S3 directories by StudentID/CourseID.
-Technical Documentation:
+#### Source: 
+S3 bucket (Graduation Status dataset).
+
+#### Transformations: 
+Schema validation and conditional routing (Passed/Failed).
+
+#### Output: 
+Partitioned S3 directories by StudentID/CourseID.
 
 ## Lambda function snippet for conditional routing
 def route_data(event):
@@ -331,13 +344,22 @@ This forward-looking architecture demonstrates a commitment to continuous improv
 
 ## Strategic Recommendations:
 
-For Researchers: Utilize Athena to query cleaned data in academic-cln-sahil and leverage partitioned folders for time-series analysis.
-For Administrators: Implement lifecycle policies to archive data to Glacier and expand Glue DataBrew jobs to additional datasets for enhanced data governance.
+#### For Researchers: 
+Utilize Athena to query cleaned data in academic-cln-sahil and leverage partitioned folders for time-series analysis.
+
+#### For Administrators: 
+Implement lifecycle policies to archive data to Glacier and expand Glue DataBrew jobs to additional datasets for enhanced data governance.
 
 ## Conclusion
 This project successfully established a robust, secure, and cost-effective cloud infrastructure on AWS for academic research analytics. By combining deep architectural rigor with practical data quality and pipeline automation, it delivers:
 
-Reliable Analytics: Ensured 100% data validity through rigorous processing.
-Cost Transparency: Maintained clear financial oversight with detailed cost tracking.
-Enterprise-Grade Security: Implemented comprehensive security layers including VPC isolation and IAM controls.
+#### Reliable Analytics: 
+Ensured 100% data validity through rigorous processing.
+
+#### Cost Transparency: 
+Maintained clear financial oversight with detailed cost tracking.
+
+#### Enterprise-Grade Security: 
+Implemented comprehensive security layers including VPC isolation and IAM controls.
+
 This demonstrates my end-to-end mastery of AWS fundamentals, aligning with real-world business objectives and proving my capability to implement both resilient infrastructure and high-quality data frameworks.
