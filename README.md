@@ -185,13 +185,8 @@ Applied Competencies: Engineered public/private subnets; configured ingress/egre
 Project Integration: Deployed VPC Endpoints for S3 to enable Glue/Athena to access data without public internet exposure. Designed scalable network architecture anticipating future integration with on-premises systems.
 
 ### VPC Security Architecture
-```mermaid
-graph LR
-  Researchers-->VPN-->TransitGateway
-  TransitGateway-->DataVPC[S3/Glue VPC]
-  TransitGateway-->AnalyticsVPC[Athena VPC]
-  DataVPC-.->VPC_Endpoint(S3)
-```
+[![GitHub VPC Diagram](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20VPC.png)](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20VPC.png)
+
 **Network Topology:**
 - **VPC Peering** between research and analytics environments
 - **Transit Gateway** connecting 3 VPCs (web, data, admin)
@@ -212,19 +207,7 @@ graph LR
 *Real-time data ingestion and analysis workflow*
 
 ### Lambda Automation Workflow
-```mermaid
-sequenceDiagram
-    participant S3 as S3 Raw Bucket
-    participant Lambda as Trigger Lambda
-    participant Glue as Glue DataBrew
-    participant CW as CloudWatch
-    
-    S3->>Lambda: ObjectCreated event
-    Lambda->>Glue: Start cleaning job
-    Glue->>CW: Send metrics
-    CW->>Lambda: Anomaly detection
-    Lambda->>SNS: Send alert if anomalies
-```
+[![GitHub Lambda Diagram](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20Lamda%20.png)](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20Lamda%20.png)
 
 ### Optimizing Workload Execution Models
 
@@ -275,15 +258,7 @@ markdown
 
 
 ### Future Architecture
-```mermaid
-graph LR
-    A[S3 Data Lake] --> B[Glue ETL]
-    B --> C[Redshift Warehouse]
-    C --> D[QuickSight BI]
-    C --> E[SageMaker ML]
-    E --> F[Early Warning System]
-    F --> G[Student Intervention]
-```
+[![GitHub Future Architecture](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20Future%20Architecture.png)](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/main/Github%20Future%20Architecture.png)
 
 ## Deliverables
 ### This curriculum provided the architectural rigor to deliver "BUSI Project 1" successfully:
