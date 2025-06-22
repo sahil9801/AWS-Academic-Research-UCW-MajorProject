@@ -114,7 +114,9 @@ Resources:
 
 ### Module 3: AWS Global Infrastructure Design
 ### Global Research Infrastructure (Module 3)
-![Multi-Region Research Architecture](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%203.drawio.png)
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%203.drawio.png
+)
 *Active-Active deployment across US-East-1 and EU-West-1*
 
 **Key Features:**
@@ -149,7 +151,10 @@ Project Integration: Selected us-east-1 Region for S3 (health-licenses-bucket) b
 
 ### Module 4: Security & IAM Governance
 ### Zero-Trust Security Framework (Module 4)
-![Research Security Architecture](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%204.drawio.png)
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%204.drawio.png
+)
+
 *Layered security model for sensitive research data*
 
 ### IAM Security Implementation
@@ -180,8 +185,9 @@ KMS encryption for sensitive license data at rest.
 
 ### Module 5: Networking (VPC & Hybrid Connectivity)
 ### 4. Network Architecture for Research Collaboration (Module 5)
-![Research VPC Design](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%205.drawio.png)
-
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%205.drawio.png
+)
 ### Isolated Environments and Secure Data Access
 
 Key Concepts Mastered: VPC architecture (subnets, route tables, gateways); Security Groups (stateful) vs. NACLs (stateless); VPC Endpoints (private S3 access); VPN/Direct Connect hybrid models.
@@ -212,7 +218,9 @@ graph LR
 
 ## Module 6: Compute Services: From EC2 to Serverless and 
 ### 3. Research Data Processing Pipeline (Modules 6)
-![Serverless Research Pipeline(Module6)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%206.drawio.png)
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%206.drawio.png
+)
 *Real-time data ingestion and analysis workflow*
 
 ### Lambda Automation Workflow
@@ -259,8 +267,9 @@ def lambda_handler(event, context):
 ### Module 7: Storage: Beyond S3 to Performance Tiers
 ### Data Persistence and Tiered Storage Strategies
 
-![Serverless Research Pipeline(Module7)](https://github.com/sahil9801/AWS-Data-Analyst---Academic-Research-UCW-/blob/main/AWS%20Module%207.drawio.png)
-
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%207.drawio.png
+)
 Key Concepts Mastered: EBS volume types (gp3, io2); EBS snapshot lifecycle management; S3 storage classes (Standard, IA, Glacier); data lifecycle policies.
 
 Applied Competencies: Migrated EBS volumes across AZs; implemented S3 versioning/object lock; designed cost-optimized storage tiering.
