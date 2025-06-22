@@ -286,17 +286,9 @@ Utilized S3 as the data lake backbone for raw/transformed data.
 Applied lifecycle rules to archive processed data to S3 Glacier.
 Data Tiering Results:
 
-markdown
-| Data Type       | Storage Class      | Cost Reduction |
-|-----------------|--------------------|----------------|
-| Raw Genomics    | S3 Intelligent     | 39%            |
-| Processed Results | Glacier Deep Arch | 73%            |
-
-
 # Integration with Data Analytics & Quality Assurance
 
 Beyond infrastructure, this project emphasizes robust data quality and streamlined analytics, mirroring methodologies crucial in broader data analysis contexts (e.g., retail analytics).
-
 
 ## Data Infrastructure Deployment
 (Parallels "Data Collection and Preparation" in analytical studies)
@@ -313,16 +305,6 @@ Established S3 buckets: academic-raw-mah (raw data) and academic-cln-sahil (clea
 (Parallels "Descriptive Statistics" phase in analytical studies)
 
 Tools: AWS Glue DataBrew, IAM Access Analyzer
-
-## Key Metrics:
-
-100% validity for critical fields:
-Plaintext
-
-CompletionID | StudentID | CourseID | CompletionStatus
-────────────┼───────────┼──────────┼─────────────────
-0 nulls     | 0 nulls   | 0 nulls  | 100% valid values
-Cost analysis: $4.61 total for 12-month storage.
 
 ## Pipeline Automation
 (Parallels "Customer Segmentation" technical implementation in analytical studies)
