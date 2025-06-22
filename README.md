@@ -23,7 +23,6 @@ Applied Competencies: Articulated business-driven cloud adoption rationales (agi
 Project Integration (BUSI Project 1): Justified the selection of AWS Glue (PaaS) and Athena (SaaS) over IaaS alternatives, eliminating server management overhead. This enabled focus on ETL logic and business insights, directly leveraging managed services’ inherent scalability and maintenance benefits.
 
 ## Applied Competencies:
-Migrated from on-premises Hadoop cluster to hybrid cloud (sensitive data in VPC, public datasets in S3). Adopted:
 
 PaaS: AWS Glue for ETL
 
@@ -69,7 +68,7 @@ Project Integration: Validated the serverless pipeline’s cost-efficiency via p
 - **Automated Backups**: 7-year retention for research data
 
 **Monitoring Stack:**
-```yaml
+```
 Resources:
   ResearchDashboard:
     Type: AWS::CloudWatch::Dashboard
@@ -113,10 +112,9 @@ Resources:
 - **S3 Cross-Region Replication** for critical research data
 - **Route 53** latency-based routing with health checks
 
-```yaml
+```
 Multi-Region Implementation:
 
-yaml
 # Technical Validation: S3 Replication
 ReplicationConfiguration:
   Role: arn:aws:iam::123456789012:role/replication-role
@@ -225,7 +223,7 @@ Project Integration: Championed serverless (Glue/Lambda) over EC2 for pipeline o
 4. **DynamoDB**: Metadata storage with ACID transactions
 5. **S3 Intelligent Tiering**: Cost-optimized research data storage
 
-```python
+```
 # Lambda Snippet (Metadata Processing)
 def lambda_handler(event, context):
     # Trigger Glue job for >500MB datasets
