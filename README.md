@@ -186,7 +186,7 @@ Security Hub Report: CRITICAL: 0 | HIGH: 2 (remediated) | MEDIUM: 9.
 Data Protection: Implemented KMS encryption + Macie PII scans.
 
 ### Module 5: Networking (VPC & Hybrid Connectivity)
-### 4. Network Architecture for Research Collaboration (Module 5)
+### Network Architecture for Research Collaboration (Module 5)
 [![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
 ](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%205.drawio.png
 )
