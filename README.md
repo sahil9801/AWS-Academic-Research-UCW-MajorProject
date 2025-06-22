@@ -24,8 +24,9 @@ graph TD
 
 ### Module 1: Cloud Concepts and Architecture
 ### Strategic Foundation for Cloud Adoption
-![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
-
+[![AWS Module 1 drawio](https://github.com/user-attachments/assets/cce1c696-de25-4c9f-9ceb-ef989230496c)
+](https://raw.githubusercontent.com/sahil9801/AWS-Academic-Research-UCW-MajorProject/refs/heads/main/AWS%20Module%201.drawio.png
+)
 
 Key Concepts Mastered: Evolution from legacy on-premises infrastructure to cloud models; analysis of Cloud Deployment Models (Public, Private, Hybrid); differentiation of Cloud Service Layers (IaaS, PaaS, SaaS) and their operational trade-offs.
 
