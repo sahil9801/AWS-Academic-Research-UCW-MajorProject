@@ -350,7 +350,7 @@ Utilize Athena to query cleaned data in academic-cln-sahil and leverage partitio
 #### For Administrators: 
 Implement lifecycle policies to archive data to Glacier and expand Glue DataBrew jobs to additional datasets for enhanced data governance.
 
-## Conclusion
+## Conclusion:
 This project successfully established a robust, secure, and cost-effective cloud infrastructure on AWS for academic research analytics. By combining deep architectural rigor with practical data quality and pipeline automation, it delivers:
 
 #### Reliable Analytics: 
