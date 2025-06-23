@@ -250,23 +250,6 @@ Championed serverless (Glue/Lambda) over EC2 for pipeline orchestration, reducin
 Utilized Lambda for custom data validation logic outside Glue’s native capabilities.
 Lambda Automation Workflow:
 
-## Components:
-
-#### API Gateway: 
-REST API for data submissions.
-
-#### Lambda Functions: 
-Python-based data validation/transformation.
-
-#### Kinesis Data Streams: 
-Real-time processing pipeline.
-
-#### DynamoDB: 
-Metadata storage with ACID transactions.
-
-#### S3 Intelligent Tiering: 
-Cost-optimized research data storage.
-
 ```
 # Lambda Snippet (Metadata Processing)
 def lambda_handler(event, context):
